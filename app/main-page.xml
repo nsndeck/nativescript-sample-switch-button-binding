@@ -1,0 +1,8 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+    <StackLayout horizontalAlignment="center" width="400">
+        <Switch checked="{{ ss.s1 }}" horizontalAlignment="center" />
+      	<Switch checked="{{ ss.s2 }}" horizontalAlignment="center" />
+      	<Switch checked="{{ ss.s3 }}" horizontalAlignment="center" />
+      	<Button text="Click me" horizontalAlignment="center" isEnabled="{{ ss.s1 || ss.s2 || ss.s3 }}" />
+    </StackLayout>
+</Page>
