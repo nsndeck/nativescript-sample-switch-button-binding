@@ -1,8 +1,17 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
     <StackLayout horizontalAlignment="center" width="400">
-        <Switch checked="{{ ss.s1 }}" horizontalAlignment="center" />
-      	<Switch checked="{{ ss.s2 }}" horizontalAlignment="center" />
-      	<Switch checked="{{ ss.s3 }}" horizontalAlignment="center" />
-      	<Button text="Click me" horizontalAlignment="center" isEnabled="{{ ss.s1 || ss.s2 || ss.s3 }}" />
+    	<StackLayout orientation="horizontal">
+    		<Label text="switch 1" />
+	        <Switch width="50" checked="{{ s1 }}" horizontalAlignment="center" />
+	        <Label text="switch 2" />
+	      	<Switch width="50" checked="{{ s2 }}" horizontalAlignment="center" />
+	      	<Label text="switch 3" />
+	      	<Switch width="50" checked="{{ s3 }}" horizontalAlignment="center" />
+      	</StackLayout>
+      	<StackLayout orientation="horizontal" horizontalAlignment="center" marginTop="30">
+      		<Label text="switch 4" />
+      		<Switch width="200" checked="{{ s4 }}" horizontalAlignment="center" />
+      	</StackLayout>
+      	<Button text="Click me" horizontalAlignment="center" isEnabled="{{ s1 || s2 || s3}}" />
     </StackLayout>
 </Page>
