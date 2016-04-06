@@ -10,7 +10,7 @@ var pageData = new observableModule.Observable({// switchers status
     's4': true
 });
 
-exports.loaded = function(eventData) {
+exports.pageLoaded = function(eventData) {
     // binding context
     page = eventData.object;
     page.bindingContext = pageData;
